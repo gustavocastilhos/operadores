@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Operators Guide</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>⚡ JS OPERATORS</h1>
+      <p>
+        Aprenda operadores JavaScript com exemplos reais,
+        brincadeiras e desafios interativos.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#aritmeticos" class="btn primary">Começar 🚀</a>
+        <a href="#quiz" class="btn secondary">Ir para Quiz 🎯</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MENU -->
+  <nav class="menu">
+    <a href="#aritmeticos">Aritméticos</a>
+    <a href="#comparacao">Comparação</a>
+    <a href="#logicos">Lógicos</a>
+    <a href="#extras">Extras</a>
+    <a href="#quiz">Quiz</a>
+  </nav>
+
+  <!-- CONTEÚDO -->
+  <main class="container">
+
+    <!-- ARITMÉTICOS -->
+    <section class="card" id="aritmeticos">
+      <h2>⚡ Operadores Aritméticos</h2>
+      <p>
+        Usados para fazer contas matemáticas.
+        O JavaScript aqui vira praticamente uma calculadora.
+      </p>
+
+      <div class="example">
+        <h3>➕ Adição</h3>
+        <code>5 + 5 = 10</code>
+      </div>
+
+      <div class="example">
+        <h3>➖ Subtração</h3>
+        <code>10 - 4 = 6</code>
+      </div>
+
+      <div class="example">
+        <h3>✖️ Multiplicação</h3>
+        <code>3 * 4 = 12</code>
+      </div>
+
+      <div class="example">
+        <h3>➗ Divisão</h3>
+        <code>20 / 5 = 4</code>
+      </div>
+
+      <div class="example">
+        <h3>🧩 Resto (%)</h3>
+        <code>10 % 3 = 1</code>
+      </div>
+
+      <div class="fun-box">
+        😂 Por exemplo:
+        <br>
+        Se <code>pizza / amigos</code> for muito pequeno...
+        alguém vai sair bravo 🍕
+      </div>
+    </section>
+
+    <!-- COMPARAÇÃO -->
+    <section class="card" id="comparacao">
+      <h2>⚖️ Operadores de Comparação</h2>
+
+      <p>
+        Eles retornam <strong>true</strong> ou
+        <strong>false</strong>.
+      </p>
+
+      <div class="example">
+        <h3>== Igual</h3>
+        <code>5 == "5" → true</code>
+      </div>
+
+      <div class="example">
+        <h3>=== Estritamente igual</h3>
+        <code>5 === "5" → false</code>
+      </div>
+
+      <div class="example">
+        <h3>!= Diferente</h3>
+        <code>10 != 5 → true</code>
+      </div>
+
+      <div class="example">
+        <h3>> Maior que</h3>
+        <code>10 > 5 → true</code>
+      </div>
+
+      <div class="example">
+        <h3>< Menor que</h3>
+        <code>2 < 8 → true</code>
+      </div>
+
+      <div class="fun-box">
+        🤯 Essa é classicakk:
+        <br>
+        <code>0 == false</code> → true
+        <br>
+        javascript as vezes ete o loko! 😂
+      </div>
+    </section>
+
+    <!-- LÓGICOS -->
+    <section class="card" id="logicos">
+      <h2>🧠 Operadores Lógicos</h2>
+
+      <p>
+        Servem para combinar condições.
+      </p>
+
+      <div class="example">
+        <h3>&& (AND)</h3>
+        <code>true && true → true</code>
+      </div>
+
+      <div class="example">
+        <h3>|| (OR)</h3>
+        <code>false || true → true</code>
+      </div>
+
+      <div class="example">
+        <h3>! (NOT)</h3>
+        <code>!true → false</code>
+      </div>
+
+      <div class="fun-box">
+        😂 Exemplo da vida real:
+        <br><br>
+
+        <code>
+          temDinheiro && lojaAberta
+        </code>
+
+        <br><br>
+
+        Resultado:
+        <br>
+        🛒 felicidade = true
+      </div>
+    </section>
+
+    <!-- EXTRAS -->
+    <section class="card" id="extras">
+      <h2>🔥 Operadores Extras</h2>
+
+      <div class="example">
+        <h3>Incremento</h3>
+        <code>numero++</code>
+      </div>
+
+      <div class="example">
+        <h3>Decremento</h3>
+        <code>numero--</code>
+      </div>
+
+      <div class="example">
+        <h3>Ternário</h3>
+        <code>
+          idade >= 18 ? "Maior" : "Menor"
+        </code>
+      </div>
+
+      <div class="example">
+
+  <h3>Ternário</h3>
+
+  <code>
+    idade >= 18 ? "Maior" : "Menor"
+  </code>
+ <div class="fun-box">
+        💀 Ternário economiza linhas...
+        mas depois de 4 ternários seguidos
+        ninguém entende mais nada.
+      </div>
+  <button class="info-btn"
+    onclick="toggleTernario()">
+
+    📖 O que é isso?
+  </button>
+
+  <div
+    class="ternario-info"
+    id="ternario-info">
+
+    <p>
+      O operador ternário é uma forma curta
+      de escrever um <strong>if/else</strong>.
+    </p>
+
+    <br>
+
+    <p>
+      Funciona assim:
+    </p>
+
+    <code>
+      condição ? valorSeTrue : valorSeFalse
+    </code>
+
+    <br>
+
+    <p>
+      Exemplo:
+    </p>
+
+    <code>
+      idade >= 18
+      ? "Maior de idade"
+      : "Menor de idade"
+    </code>
+
+    <br>
+
+    <p>
+      Se a condição for verdadeira,
+      retorna o primeiro valor.
+      <br>
+      Se for falsa,
+      retorna o segundo.
+    </p>
+
+  </div>
+
+</div>
+    </section>
+
+   <!-- QUIZ AVANÇADO -->
+
+<section class="quiz-card advanced-quiz" id="quiz">
+
+  <h2>🎯 Quiz JavaScript</h2>
+
+  <div class="progress-container">
+    <div class="progress-bar" id="progress-bar"></div>
+  </div>
+
+  <p id="quiz-question">
+    Pergunta aqui
+  </p>
+
+  <div class="quiz-buttons" id="quiz-buttons">
+  </div>
+
+  <p id="quiz-result"></p>
+
+</section>
+<!-- QUIZ DESAFIO -->
+
+<section class="quiz-card" id="desafio">
+
+  <h2>🔥 Quiz Desafio JavaScript</h2>
+
+  <div class="progress-container">
+    <div
+      class="progress-bar"
+      id="desafio-progress">
+    </div>
+  </div>
+
+  <p id="desafio-question"></p>
+
+  <div
+    class="quiz-buttons"
+    id="desafio-buttons">
+  </div>
+
+  <p id="desafio-result"></p>
+
+</section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      Feito com 💛 usando HTML, CSS e JavaScript
+    </p>
+
+    <div class="footer-buttons">
+      <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">
+        Documentação JS 📘
+      </a>
+
+      <a href="https://github.com/gustavocastilhos/operadores" target="_blank">
+      Meu GitHub 💻 Deixa um estrelinha lá! ⭐
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
